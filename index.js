@@ -13,7 +13,6 @@ mongoose.connect('mongodb+srv://nitesh:samitarai94@myclus-r6ysx.azure.mongodb.ne
 app.get('/',(req,res)=>{
     res.send("test");
 })
-
 //creating a middleware to route
 app.use('/posts',postHandler);
 app.listen(4000,()=> console.log("server running"));
